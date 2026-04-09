@@ -1,5 +1,3 @@
-# Machine Learning Notebooks
-
 A collection of hands-on Jupyter notebooks covering core machine learning concepts, algorithms, and techniques — implemented and explained step by step.
 
 ---
