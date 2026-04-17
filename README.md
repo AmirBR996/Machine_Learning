@@ -1,3 +1,5 @@
+# 🤖 Machine Learning
+
 A collection of hands-on Jupyter notebooks covering core machine learning concepts, algorithms, and techniques — implemented and explained step by step.
 
 ---
@@ -19,8 +21,13 @@ A collection of hands-on Jupyter notebooks covering core machine learning concep
 | [K_nearest_neighbour.ipynb](K_nearest_neighbour.ipynb) | K-Nearest Neighbors classifier on the Breast Cancer dataset (Kaggle) |
 | [Naive_Bayes_Classifier.ipynb](Naive_Bayes_Classifier.ipynb) | Naive Bayes classifier with Laplace smoothing on the Play Tennis dataset |
 | [SVM_with_kernel.ipynb](SVM_with_kernel.ipynb) | Support Vector Machine with RBF kernel on non-linearly separable data |
+| [K_means_Clustering.ipynb](K_means_Clustering.ipynb) | K-Means clustering implemented from scratch on a student dataset |
 | [Bagging_Ensemble.ipynb](Bagging_Ensemble.ipynb) | Bagging with Decision Trees and SVM on a synthetic classification dataset |
+| [Random_Forest.ipynb](Random_Forest.ipynb) | Random Forest classifier with GridSearchCV tuning on the Heart Disease dataset (Kaggle) |
+| [adaboost.ipynb](adaboost.ipynb) | AdaBoost classifier on a synthetic circles dataset with decision region visualization |
+| [Gradient_boosting.ipynb](Gradient_boosting.ipynb) | Gradient Boosting built step-by-step from scratch (log-odds, residuals, weak learners) |
 | [Voting_Ensemble.ipynb](Voting_Ensemble.ipynb) | Hard and soft voting ensemble classifiers |
+| [Optuna_Hyperparameter_Tuning.ipynb](Optuna_Hyperparameter_Tuning.ipynb) | Automated hyperparameter tuning with Optuna on the Pima Indians Diabetes dataset |
 | [classification_metrics.ipynb](classification_metrics.ipynb) | Evaluation metrics (accuracy, precision, recall, F1) on the Breast Cancer dataset |
 | [ROC_Curve.ipynb](ROC_Curve.ipynb) | ROC curve and AUC analysis on the Pima Indians Diabetes dataset |
 
@@ -30,13 +37,15 @@ A collection of hands-on Jupyter notebooks covering core machine learning concep
 
 - Python 3.8+
 - Jupyter Notebook or JupyterLab
-- Common packages: `numpy`, `pandas`, `matplotlib`, `scikit-learn`
+- Common packages: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `seaborn`
 - Some notebooks also use `kagglehub` to download datasets from Kaggle
+- `optuna` for hyperparameter tuning (`Optuna_Hyperparameter_Tuning.ipynb`)
+- `mlxtend` for decision region plots (`adaboost.ipynb`)
 
 Install dependencies with:
 
 ```bash
-pip install numpy pandas matplotlib scikit-learn kagglehub
+pip install numpy pandas matplotlib scikit-learn seaborn kagglehub optuna mlxtend
 ```
 
 ---
@@ -59,5 +68,7 @@ Then open any notebook from the Jupyter file browser to explore the topic.
 - **Regularization**: L1, L2, and ElasticNet; understanding coefficient shrinkage
 - **Optimization**: Batch, Stochastic, and Mini-batch Gradient Descent
 - **Classification**: Logistic Regression, KNN, Naive Bayes, SVM (with kernels)
-- **Ensemble Methods**: Bagging, Hard Voting, Soft Voting
+- **Clustering**: K-Means from scratch
+- **Ensemble Methods**: Bagging, Random Forest, AdaBoost, Gradient Boosting, Hard Voting, Soft Voting
+- **Hyperparameter Tuning**: GridSearchCV, Optuna
 - **Model Evaluation**: Classification metrics, ROC Curve, AUC
